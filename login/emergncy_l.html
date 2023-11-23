@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="emergency_c.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/8c01303568.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <script>
+      var x = document.getElementById("demo");
+      
+      function getLocation() {
+        if (navigator.geolocation) {
+          navigator.geolocation.getCurrentPosition(showPosition);
+        } else { 
+          x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+      }
+      
+      function showPosition(position) {
+        x.innerHTML = "Latitude: " + position.coords.latitude + 
+        "<br>Longitude: " + position.coords.longitude;
+      }
+      </script>
+    <div class="notch">
+      <div class="image">
+          <a href="index.php"><img src="Healthsos.png" width="200" height="80" style="margin: 15px 10px"></a></div>
+          <div class="top">
+              <ul>
+                  <li><a href="index.php"><b>HOME</b></a></li>
+                  <li><a href="about.html"><b>ABOUT</b></a></li>
+                  <li><a href="contact_us.html"><b>CONTACT US</b></a></li>
+              </ul>
+          </div>
+          <div class="box"><a href="signup.html" ><b>SIGNUP/LOGIN</b></a></div>
+      </div>
+      <div class="header">
+    <div class="services-section">
+      <div class="inner-width">
+        <h1 class="section-title">Our Services</h1>
+        <div class="border"></div>
+        <div class="services-container">
+
+          <div class="service-box">
+            <div class="service-icon">
+             <a href="onwawy.php"> <button onclick="getLocation()"><i class="fa-solid fa-truck-medical"></i></button>
+             </a>
+            </div>
+            <div class="service-title">Traffic Accident</div>
+            <div class="service-desc">
+              A road traffic accident (RTA) is any injury due to crashes originating from, terminating with or involving a vehicle partially or fully on a public road
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <button onclick="getLocation()"><i class="fa-solid fa-heart-pulse"></i></button>
+            </div>
+            <div class="service-title">Heart Attack</div>
+            <div class="service-desc">
+              A heart attack, also called a myocardial infarction, happens when a part of the heart muscle doesn't get enough blood
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <button onclick="getLocation()"><i class="fa-solid fa-lungs"></i></button>
+            </div>
+            <div class="service-title">Asthama</div>
+            <div class="service-desc">
+              Asthma is a condition in which your airways narrow and swell and may produce extra mucus.
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <button onclick="getLocation()"><i class="fa-solid fa-fire-flame-simple"></i></button>
+            </div>
+            <div class="service-title">Burn & Scars</div>
+            <div class="service-desc">
+              Burn scars occur when burns damage the skin. For burns that only affect the outer layers of the skin, the scar tissue fades over time
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <button onclick="getLocation()"><i class="fa-solid fa-bed-pulse"></i></button>
+            </div>
+            <div class="service-title">Stroke</div>
+            <div class="service-desc">
+              A stroke, sometimes called a brain attack, occurs when something blocks blood supply to part of the brain or when a blood vessel in the brain bursts.
+            </div>
+          </div>
+
+          <div class="service-box">
+            <div class="service-icon">
+              <button onclick="getLocation()"><a href="onwawy.html"><i class="fa-solid fa-crutch"></i></a></button>
+            </div>
+            <div class="service-title">Injuries</div>
+            <div class="service-desc">
+              An injury is damage to your body. It refers to harm caused by accidents, falls, hits, weapons, and more
+            </div>
+          </div>
+        </div>
+      </div>
+    </div></div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+.gradient-custom {
+    margin: 200px 20px 100px,20px;
+/* fallback for old browsers */
+}
+
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+color:#fff;
+font-size: 4rem;
+line-height: 2.15;
+padding-left: .75em;
+padding-right: .75em;
+}
+.card-registration .select-arrow {
+top: 200px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    }
+    .sign-bag{
+        background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(2510592.jpg);
+    }
+    .header{ 
+     min-height: 100vh;
+     width: 100%;
+     background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(2510592.jpg);
+     background-position: center;
+     background-size: cover;
+     position: relative;
+     
+    }
+    nav{
+    display: flex;
+    padding 4% 6%;
+    justify-content: space-between;
+    align-items: center;
+    }
+    .nav-gi{
+    flex: 1;
+    text-align:right;
+    }
+    .nav-gi ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 50px 12px;
+    position: relative;
+    }
+    .nav-gi ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
+    }
+    .nav-gi ul li::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background:#5865ec;
+    display: block;
+    margin: auto;
+    transition: 0.4s;
+    }
+    .nav-gi ul li:hover::after{
+    width: 100%;
+    }
+    .text{
+        position: absolute;
+        width: 90%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align:center;
+    }
